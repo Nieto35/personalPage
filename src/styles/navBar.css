@@ -1,0 +1,32 @@
+.menuItems {
+  flex-direction: row-reverse !important;
+}
+
+.appBar {
+  background-color: rgba(12, 12, 23, 0.9) !important;
+}
+
+.web {
+  z-index: 2;
+  color: #e48400;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  animation: rotate-letter infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: rotate-letter;
+}
+
+@keyframes rotate-letter {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

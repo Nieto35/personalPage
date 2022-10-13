@@ -1,0 +1,56 @@
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/navBar.css ***!
+  \*************************************************************************/
+.menuItems {
+  flex-direction: row-reverse !important;
+}
+
+.appBar {
+  background-color: rgba(12, 12, 23, 0.9) !important;
+}
+
+.web {
+  z-index: 2;
+  color: #e48400;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  animation: rotate-letter infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: rotate-letter;
+}
+
+@keyframes rotate-letter {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/index.css ***!
+  \************************************************************************/
+@font-face {
+  font-family: "Roboto";
+  src: url(/82f481ebbe4383351338.woff2) format("woff2"),
+    url(/a2ae29faa4b95f17fc29.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+

@@ -17,6 +17,8 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
+// import useDarkMode from "../../hooks/useDarkMode";
+
 import avatar from "@images/avatar_default.png";
 import { Button } from "@mui/material";
 
@@ -26,6 +28,7 @@ const drawerWidth = 380;
 const ResponsiveAppBar = (props) => {
   const { window } = props;
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [darkMode, setDarkMode] = useDarkMode();
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -33,6 +36,8 @@ const ResponsiveAppBar = (props) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  console.log(darkMode);
 
   const drawer = (
     <Box
